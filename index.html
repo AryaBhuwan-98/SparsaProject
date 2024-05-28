@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebApp</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <div id="splash-screen" class="screen">
+        <div class="progress-bar"></div>
+    </div>
+    <div id="config-screen" class="screen hidden">
+        <input type="text" id="name-input" placeholder="Enter your name">
+        <div class="button-container">
+            <button id="register-btn">Register</button>
+            <button>Refresh</button>
+            <button>Reboot</button>
+            <button>App Settings</button>
+            <button>WiFi Settings</button>
+            <button>Device Info</button>
+        </div>
+    </div>
+    <div id="slideshow-screen" class="screen hidden">
+        <div id="slideshow-container"></div>
+        <marquee behavior="scroll" direction="left" id="ticker-text">Welcome to the Slideshow!</marquee>
+    </div>
+    <script src="Script.js"></script>
+</body>
+</html>

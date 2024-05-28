@@ -1,0 +1,107 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    background-color: gold;
+} */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: gold;
+}
+
+.screen {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#splash-screen {
+    background-color: #f0f0f0;
+}
+
+.progress-bar {
+    width: 100px;
+    height: 10px;
+    background-color: #ccc;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-bar::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: #4caf50;
+    animation: progress 2s linear forwards;
+}
+
+@keyframes progress {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+
+.hidden {
+    display: none;
+}
+
+#config-screen {
+    background-color: #e0e0e0;
+}
+
+.button-container {
+    margin-top: 20px;
+    
+}
+
+.button-container button {
+    margin: 5px;
+    /* color: red; */
+    width: 10rem;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+}
+.button-container button:hover {
+    background-color: blueviolet;
+    color: #ccc;
+}
+#slideshow-screen {
+    background-color: #d0d0d0;
+    text-align: center;
+}
+
+#slideshow-container img, #slideshow-container video {
+    max-width: 100%;
+    max-height: 80vh;
+}
+
+#ticker-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+ #name-input{
+    width: 20rem;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 13px;
+} 
